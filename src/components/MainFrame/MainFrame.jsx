@@ -9,9 +9,9 @@ export const MainFrame = () => {
       <img src={mf}
       className={styles.image}></img>
       <div className={styles.textContainer}>
-        <p className={styles.text}>WEB
-          <span className={styles.midText}>PORTFOLIO</span>
-          UI/UX</p>
+        <p className={styles.text}>WEB</p>
+          <p className={styles.midText}>PORTFOLIO</p>
+          <p className={styles.text}>UI/UX</p>
         </div>
     </div>
   ) 
