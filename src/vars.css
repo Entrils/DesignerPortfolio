@@ -1,0 +1,13 @@
+@import "@fontsource/museomoderno";
+@import "@fontsource/montserrat";
+@import "@fontsource/abhaya-libre";
+
+:root{
+    /* цвета */
+    --color-main: white;
+
+    /* шрифты */
+    --font-main: "MuseoModerno";
+    --font-second: "Montserrat";
+    --font-prjects: "Abhaya Libre";
+}

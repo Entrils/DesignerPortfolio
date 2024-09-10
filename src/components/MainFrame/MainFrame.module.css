@@ -1,0 +1,39 @@
+@import "../../vars.css";
+
+.container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.image{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 0;
+    opacity: 33%;
+}
+
+
+.textContainer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.text{
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 128px;
+}
+.midText{
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 24px;
+}

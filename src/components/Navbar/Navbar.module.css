@@ -1,0 +1,47 @@
+@import "../../vars.css";
+
+.navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 59px;
+}
+
+.menu{
+    display: flex;
+    margin: 0 auto;
+}
+
+.menuItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    user-select: none;
+    color: white;
+    list-style: none;
+}
+
+.menuItems a {
+    font-size: 20px;
+    font-family: var(--font-second);
+    color: white;
+    text-decoration: none;
+}
+
+.title{
+    color: white;
+    display: inline-block;
+    user-select: none;
+    font-family: var(--font-main) !important;
+    font-size: 40px;
+    font-weight: 700;
+    border: solid;
+    text-align: center;
+    background-color: #4900BF;
+    border-color: #4900BF;
+    padding: 10px;
+    border-radius: 67px 67px;
+    width: 200px;
+}

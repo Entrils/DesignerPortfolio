@@ -1,0 +1,41 @@
+@import "../../vars.css";
+
+.container{
+    color: white;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: 20px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 40px;
+    gap: 10px;
+    font-family: var(--font-second);
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.image{
+    width: 57px;
+    height: 57px;
+}
+
+.imageProps{
+    width: 71px;
+    height: 71px;
+}
+
+.mail{
+    color: #3294BE;
+    font-size: 40px;
+    font-family: var(--font-second);
+}

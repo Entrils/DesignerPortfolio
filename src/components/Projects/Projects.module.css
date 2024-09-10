@@ -1,0 +1,33 @@
+@import "../../vars.css";
+
+.container{
+    background-color: white;
+    margin-top: 80px;
+}
+
+.title{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 40px;
+    gap: 10px;
+    font-family: var(--font-second);
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.image{
+    width: 57px;
+    height: 57px;
+}
+
+.description{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-family: var(--font-prjects);
+}
