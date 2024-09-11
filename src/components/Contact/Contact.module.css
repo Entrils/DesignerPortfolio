@@ -2,7 +2,7 @@
 
 .container{
     color: white;
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -10,6 +10,7 @@
     align-items: center;
     width: 100vw;
     margin-bottom: 20px;
+    gap:15px;
 }
 
 .title{
@@ -17,7 +18,7 @@
     flex-direction: column;
     color: white;
     font-size: 40px;
-    gap: 10px;
+    gap: 15px;
     font-family: var(--font-second);
     justify-content: center;
     align-items: center;
@@ -34,8 +35,16 @@
     height: 71px;
 }
 
-.mail{
+
+.mail a{
     color: #3294BE;
     font-size: 40px;
     font-family: var(--font-second);
+    text-decoration: none;
+}
+
+.ContactImages{
+    display: flex;
+    justify-content: space-between;
+    gap:15px;
 }

@@ -45,6 +45,20 @@
 .skill{
     margin: 40px 80px;
 }
+progress {
+    border-radius: 10px;
+    width: 151px;
+    height: 13px;
+}
+
+progress::-webkit-progress-bar {
+    border-radius: 10px;
+    background-color: #474747;
+}
+progress::-webkit-progress-value {
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
 
 .under{
     color: white;

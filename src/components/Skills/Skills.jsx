@@ -5,7 +5,7 @@ import { data } from "../../data/skills";
 
 export const Skills = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='skills'>
       <div className={styles.title}><img className={styles.image} src={titler} alt='Разделитель'/> НАВЫКИ</div>
       <div className={styles.content}>
       {

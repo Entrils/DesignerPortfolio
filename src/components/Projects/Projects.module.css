@@ -3,7 +3,7 @@
 .container{
     background-color: white;
     margin-top: 80px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
 
 .title{
@@ -38,6 +38,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 25px;
     justify-content: space-between;
     align-items: flex-start;
     justify-content: center;
@@ -47,18 +48,85 @@
 .lowProj{
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
+    margin-top: 10  px;
     height: 400px;
     width: 600px;
 }
 
-.lowProj p{
+.blueGrad{
     display: flex;
     position: absolute;
-    padding-top: 370px;
-    padding-left: 15px;
-    font-size: 40px;
+    height: 400px;
+    width: 600px;
+    background: linear-gradient(rgba(255,255,255,0.1) 90%, #1f5ad1);
+    z-index: 1;
+}
+
+.yellowGrad{
+    display: flex;
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    background: linear-gradient(rgba(255,255,255,0.1) 90%, #A57500);
+    z-index: 1;
+}
+
+.lightBlueGrad{
+    display: flex;
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    background: linear-gradient(rgba(255,255,255,0.1) 90%, #21A2DA);
+    z-index: 1;
+}
+
+.blackGrad{
+    display: flex;
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    background: linear-gradient(rgba(255,255,255,0.1) 90%,#000000);
+    z-index: 1;
+}
+
+.orangeGrad{
+    display: flex;
+    position: absolute;
+    height: 800px;
+    width: 1216px;
+    background: linear-gradient(rgba(255,255,255,0.1) 87%,#D96921);
+    z-index: 1;
+}
+
+.lowProj img{
+    height: 400px;
+    width: 600px;
+}
+.types{
+    display: flex;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 20px;
     color: white;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #121212;
+    border-radius: 15px;
+    font-family: var(--font-second);
+}
+.projTitle{
+    display: flex;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 15px;
+    font-size: 32px;
+    color: white;
+    z-index: 2;
     font-weight: 500;
     font-family: var(--font-second);
 }
@@ -70,14 +138,37 @@
     height: 800px;
     width: 1216px;
 }
+.highProj img{
+    height: 800px;
+    width: 1216px;
+}
 
-.highProj p{
+.projTitleHigh{
     display: flex;
     position: absolute;
-    padding-top: 770px;
+    padding-top: 710px;
     padding-left: 15px;
     font-size: 40px;
     color: white;
     font-weight: 500;
+    z-index: 2;
+    font-family: var(--font-second);
+}
+
+.typesHigh{
+    display: flex;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #121212;
+    border-radius: 25px;
     font-family: var(--font-second);
 }
