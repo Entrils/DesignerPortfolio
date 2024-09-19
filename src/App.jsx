@@ -1,20 +1,15 @@
+import { BrowserRouter } from 'react-router-dom';
 import styles from './App.module.css';
-import { About } from './components/About/About';
-import { Contact } from './components/Contact/Contact';
-import { MainFrame } from './components/MainFrame/MainFrame';
 import { Navbar } from './components/Navbar/Navbar';
-import { Projects } from './components/Projects/Projects';
-import { Skills } from './components/Skills/Skills';
+import AppRouter from './components/AppRouter';
 
 function App() {
   return (
     <div className={styles.App}>
-      <Navbar/>
-      <MainFrame/>
-      <About/>
-      <Skills/>
-      <Projects/>
-      <Contact/>
+      <BrowserRouter>
+        <Navbar/>
+        <AppRouter/>
+      </BrowserRouter>
     </div>
   );
 }

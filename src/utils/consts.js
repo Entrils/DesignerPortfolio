@@ -1,0 +1,8 @@
+export const MAIN_ROUTE = '/'
+export const FORUM_ROUTE = '/art_forum'
+export const LOGO_ROUTE = '/logotypes'
+export const STUDIO_ROUTE = '/nails_studio'
+export const DIAMOND_ROUTE = '/diamond_mosaic'
+export const ANOTHERONE_ROUTE = '/another1'
+export const ANOTHERTWO_ROUTE = '/another2'
+export const ANOTHERTHREE_ROUTE = '/another3'
