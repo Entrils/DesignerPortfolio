@@ -22,3 +22,67 @@
     align-items: center;
     font-weight: 600;
 }
+.description{
+    display: flex;
+    color: white;
+    margin-top: 50px;
+    font-family: var(--font-second);
+}
+.colors{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 75px;
+    margin-top: 50px;
+}
+
+.color1{
+  height: 200px;
+  width: 200px;
+  background-color: #4D10DD;
+  border: solid;
+  border-radius: 50%;
+  border-color: white;
+  border-width: 3px;
+}
+.color2{
+    height: 200px;
+    width: 200px;
+    border: solid;
+    background-color: #253AF9;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 3px;
+}
+.color3{
+    height: 200px;
+    width: 200px;
+    border: solid;
+    background-color: #EEF1F6;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 3px;
+}
+.color4{
+    height: 200px;
+    width: 200px;
+    border: solid;
+    background-color: #3F3F3F;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 3px;
+}
+
+.screenDesc{
+    display: flex;
+    color: white;
+    margin-top: 150px;
+    font-family: var(--font-second);
+    width: 750px;
+    text-align: center;
+}
+
+.panelScreenContainer{
+    display: flex;
+    margin-top: 50px;
+}
