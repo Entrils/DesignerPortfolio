@@ -1,34 +1,11 @@
 @import "../../vars.css";
 
-.navbar{
+.content{
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 59px;
-    margin-left: 18px;
-}
-
-.menu{
-    display: flex;
-    margin: 0 auto;
-}
-
-.menuItems {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 100px;
-    user-select: none;
-    color: white;
-    list-style: none;
-}
-
-.menuItems a {
-    font-size: 20px;
-    font-family: var(--font-second);
-    color: white;
-    text-decoration: none;
+    margin-bottom: 50px;
 }
 
 .title{
@@ -36,6 +13,7 @@
     display: inline-block;
     user-select: none;
     font-family: var(--font-main) !important;
+    font-size: 20px;
     font-weight: 700;
     border: solid;
     text-align: center;

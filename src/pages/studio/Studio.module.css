@@ -1,5 +1,4 @@
 @import "../../vars.css";
-
 .container{
     position: relative;
     display: flex;
@@ -39,7 +38,7 @@
 .color1{
   height: 200px;
   width: 200px;
-  background-color: #4D10DD;
+  background-color: #282828;
   border: solid;
   border-radius: 50%;
   border-color: white;
@@ -49,7 +48,7 @@
     height: 200px;
     width: 200px;
     border: solid;
-    background-color: #253AF9;
+    background-color: #5179FF;
     border-radius: 50%;
     border-color: white;
     border-width: 3px;
@@ -67,7 +66,7 @@
     height: 200px;
     width: 200px;
     border: solid;
-    background-color: #3F3F3F;
+    background-color: #FF5153;
     border-radius: 50%;
     border-color: white;
     border-width: 3px;

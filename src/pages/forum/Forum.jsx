@@ -3,10 +3,12 @@ import styles from './Forum.module.css'
 import titler from '../../assets/titler.png'
 import panel from '../../assets/art_forum/panel.png'
 import fullScreen from '../../assets/art_forum/fullScreen.png'
+import TopSide from '../../components/TopSIde/TopSide'
 
 export default function Forum() {
   return (
     <div className={styles.container}>
+      <TopSide/>
       <div className={styles.title}><img className={styles.image} src={titler} alt='Разделитель'/> ФОРУМ ДЛЯ ХУДОЖНИКОВ</div>
       <div className={styles.description}>Цветовые решения проекта</div>
       <div className={styles.colors}>
@@ -22,7 +24,7 @@ export default function Forum() {
       <div className={styles.screenDesc}>
       Стартовая страница с популярными темами, эмоциями, работами художников и новостной лентой форума.
       </div>
-      <div className={styles.panelScreenContainer}><img className={styles.panelScreen} src={fullScreen} alt='Панель'/></div>
+      <div className={styles.panelScreenContainer}><img className={styles.panelScreen} src={fullScreen} alt='Стартовая страница'/></div>
     </div>
   )
 }
