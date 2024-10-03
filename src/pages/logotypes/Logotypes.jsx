@@ -16,11 +16,13 @@ import baby_talk from '../../assets/logotypes/baby_talk.png'
 import dragon from '../../assets/logotypes/black_dragon.png'
 import spherium from '../../assets/logotypes/spherium.png'
 import TopSide from '../../components/TopSIde/TopSide'
+import BackArrow from '../../components/BackArrow/BackArrow'
 
 export default function Logotypes() {
   return (
     <div className={styles.container}>
       <TopSide/>
+      <BackArrow/>
        <div className={styles.title}><img className={styles.image} src={titler} alt='Разделитель'/>ПАК ЛОГОТИПОВ</div>
        <div className={styles.description}>Подборка логотипов за всю мою работу дизайнером</div>
        <div className={styles.imagesWrapper}>

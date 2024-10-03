@@ -4,11 +4,13 @@ import titler from '../../assets/titler.png'
 import screen1 from '../../assets/korea/screen1.png'
 import screen2 from '../../assets/korea/screen2.png'
 import TopSide from '../../components/TopSIde/TopSide'
+import BackArrow from '../../components/BackArrow/BackArrow'
 
 export default function Studio() {
   return (
     <div className={styles.container}>
       <TopSide/>
+      <BackArrow/>
       <div className={styles.title}><img className={styles.image} src={titler} alt='Разделитель'/>СТУДИЯ МАНИКЮРА «KOREA NAILS»</div>
       <div className={styles.description}>Цветовые решения проекта</div>
       <div className={styles.colors}>

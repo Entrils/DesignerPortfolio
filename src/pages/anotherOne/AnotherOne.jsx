@@ -13,11 +13,13 @@ import neko from '../../assets/another1/neko.png'
 import neonsh1 from '../../assets/another1/neonsh1.png'
 import neonsh2 from '../../assets/another1/neonsh2.png'
 import TopSide from '../../components/TopSIde/TopSide'
+import BackArrow from '../../components/BackArrow/BackArrow'
 
 export default function AnotherOne() {
   return (
     <div className={styles.container}>
       <TopSide/>
+      <BackArrow/>
       <div className={styles.title}><img className={styles.image} src={titler} alt='Разделитель'/>ДРУГИЕ ДИЗАЙНЫ, МАКЕТЫ И НАБРОСКИ</div>
       <div className={styles.description}>Блок для сайта</div>
       <div>

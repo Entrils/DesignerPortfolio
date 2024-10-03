@@ -1,0 +1,59 @@
+@import "../../vars.css";
+
+.container{
+    position: fixed;
+    top: 40px;
+    left: 50px;
+}
+
+.arrow {
+    margin:20px;
+}
+.arrow svg {
+    width: 70px;
+    height: auto;
+    margin: 0 2rem;
+    cursor: pointer;
+    overflow: visible;
+}
+.arrow svg polygon, 
+.arrow svg path {
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+    fill: #4900BF;
+}
+.arrow svg:hover polygon, 
+.arrow svg:hover path {
+    transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+    fill: #ffffff;
+}
+.arrow svg:hover .arrowpl {
+    animation: arrow-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+.arrow svg:hover .arrowplfixed {
+    animation: arrow-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+ 
+@keyframes arrow-anim {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    5% {
+        transform: translateX(-0.1rem);
+    }
+    100% {
+        transform: translateX(1rem);
+        opacity: 0;
+    }
+}
+@keyframes arrow-fixed-anim {
+    5% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}

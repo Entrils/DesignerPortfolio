@@ -15,12 +15,14 @@ import semenova from '../../assets/another2/semenova_mary.png'
 import sharm1 from '../../assets/another2/sharm.png'
 import sharm2 from '../../assets/another2/sharm2.png'
 import TopSide from '../../components/TopSIde/TopSide'
+import BackArrow from '../../components/BackArrow/BackArrow'
 
 
 export default function AnotherTwo() {
   return (
     <div className={styles.container}>
       <TopSide/>
+      <BackArrow/>
       <div className={styles.title}><img className={styles.image} src={titler} alt='Разделитель'/>ДРУГИЕ ДИЗАЙНЫ, МАКЕТЫ И НАБРОСКИ 2</div>
       <div className={styles.description}>Данная страница будет без подписей, так как дизайны довольно старые и их очень много :)</div>
       <div className={styles.content}>

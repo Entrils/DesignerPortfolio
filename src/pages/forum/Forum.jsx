@@ -4,11 +4,13 @@ import titler from '../../assets/titler.png'
 import panel from '../../assets/art_forum/panel.png'
 import fullScreen from '../../assets/art_forum/fullScreen.png'
 import TopSide from '../../components/TopSIde/TopSide'
+import BackArrow from '../../components/BackArrow/BackArrow'
 
 export default function Forum() {
   return (
     <div className={styles.container}>
       <TopSide/>
+      <BackArrow/>
       <div className={styles.title}><img className={styles.image} src={titler} alt='Разделитель'/> ФОРУМ ДЛЯ ХУДОЖНИКОВ</div>
       <div className={styles.description}>Цветовые решения проекта</div>
       <div className={styles.colors}>

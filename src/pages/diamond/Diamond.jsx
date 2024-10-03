@@ -6,11 +6,13 @@ import canvas2 from '../../assets/diamonds/canvas2.png'
 import canvas3 from '../../assets/diamonds/canvas3.png'
 import canvas4 from '../../assets/diamonds/canvas4.png'
 import TopSide from '../../components/TopSIde/TopSide'
+import BackArrow from '../../components/BackArrow/BackArrow'
 
 export default function Diamond() {
   return (
     <div className={styles.container}>
       <TopSide/>
+      <BackArrow/>
       <div className={styles.title}><img className={styles.image} src={titler} alt='Разделитель'/>АЛМАЗНАЯ МОЗАИКА</div>
       <div className={styles.description}>Редактирование фото, подбор цветов для подготовки алмазой мозаики по фото</div>
 

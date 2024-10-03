@@ -11,11 +11,13 @@ import semary from '../../assets/another3/se+mary.png'
 import pattern from '../../assets/another3/pattern.png'
 import nakleiki from '../../assets/another3/nakleiki.png'
 import TopSide from '../../components/TopSIde/TopSide'
+import BackArrow from '../../components/BackArrow/BackArrow'
 
 export default function AnotherThree() {
   return (
     <div className={styles.container}>
       <TopSide/>
+      <BackArrow/>
       <div className={styles.title}><img className={styles.image} src={titler} alt='Разделитель'/>ДРУГИЕ ДИЗАЙНЫ, МАКЕТЫ И НАБРОСКИ 3</div>
       <div className={styles.description}>Данная страница будет без подписей, так как дизайны довольно старые и их очень много :)</div>
       <div className={styles.content}>
