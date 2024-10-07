@@ -28,3 +28,34 @@
     margin-top: 50px;
     font-family: var(--font-second);
 }
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.horizontal img{
+    width: 830px;
+    height: 1150px;
+}
+
+.vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 25px;
+    gap: 25px;
+}
+
+.vertical img{
+    width: 1680px;
+    height: 975px;
+}

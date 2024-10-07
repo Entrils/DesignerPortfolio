@@ -25,6 +25,56 @@
 .description{
     display: flex;
     color: white;
-    margin-top: 50px;
+    margin-top: 75px;
     font-family: var(--font-second);
+}
+
+.water{
+    display: flex;
+    margin-top: 50px;
+    width: 1560px;
+    height: 870px;
+}
+
+.phones{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 75px;
+}
+
+.worlds{
+    display: flex;
+    margin-top: 50px;
+    width: 1560px;
+    height: 1054px;
+}
+
+.mocaps{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 50px;
+}
+.upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25px;
+}
+.rightside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.vk{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
 }

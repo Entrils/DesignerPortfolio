@@ -22,7 +22,7 @@ export default function AnotherOne() {
       <BackArrow/>
       <div className={styles.title}><img className={styles.image} src={titler} alt='Разделитель'/>ДРУГИЕ ДИЗАЙНЫ, МАКЕТЫ И НАБРОСКИ</div>
       <div className={styles.description}>Блок для сайта</div>
-      <div>
+      <div className={styles.water}>
         <img src={water} alt='Under Water'/>
       </div>
       <div className={styles.description}>Макеты кастомной темы на телефон</div>
@@ -32,14 +32,18 @@ export default function AnotherOne() {
         <img src={phone3} alt='Phone 3'/>
       </div>
       <div className={styles.description}>Логотип и цветовые решения для современных телефонов 2WORLDS</div>
-      <div>
+      <div className={styles.worlds}>
         <img src={worlds} alt='2 WORLDS'/>
       </div>
       <div className={styles.description}>Мокапы разных компаний и логотипов</div>
       <div className={styles.mocaps}>
+        <div className={styles.upper}>
           <img src={zooshop1} alt='Zoo shop'/>
-          <img src={zooshop2} alt='Zoo shop'/>
-          <img src={zooshop3} alt='Zoo shop'/>
+            <div className={styles.rightside}>
+              <img src={zooshop2} alt='Zoo shop'/>
+              <img src={zooshop3} alt='Zoo shop'/>
+            </div>
+        </div>
           <img src={neko} alt='Neko'/>
       </div>
       <div className={styles.description}>Полиграфия и оформление ВК</div>

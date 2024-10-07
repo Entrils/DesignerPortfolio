@@ -5,7 +5,9 @@ import ArtForum from '../../assets/projects/ArtForum.png'
 import DiamondCanvas from '../../assets/projects/DiamondCanvas.png'
 import KoreaNails from '../../assets/projects/KoreaNails.png'
 import Neko from '../../assets/projects/Neko.png'
-import Twitch from '../../assets/projects/twitch.png'
+import anotherTwoo from '../../assets/projects/anotherTwo.png'
+import anotherThreee from '../../assets/projects/anotherThree.png'
+import water from '../../assets/another1/under_water.png'
 import { NavLink } from 'react-router-dom'
 import { ANOTHERONE_ROUTE, ANOTHERTHREE_ROUTE, ANOTHERTWO_ROUTE, DIAMOND_ROUTE, FORUM_ROUTE, LOGO_ROUTE, STUDIO_ROUTE } from '../../utils/consts'
 
@@ -56,7 +58,7 @@ export const Projects = () => {
         <div className={styles.highProj}>
           <div className={styles.orangeGrad}/>
           <p className={styles.typesHigh}>Прочее</p>
-          <img src={Twitch} alt='AnotherOne'/>
+          <img src={water} alt='AnotherOne'/>
           <p className={styles.projTitleHigh}>Другие дизайны, макеты и наброски </p> 
         </div>
         </NavLink>
@@ -65,7 +67,7 @@ export const Projects = () => {
         <div className={styles.lowProj}>
           <div className={styles.blackGrad}/>
           <p className={styles.types}>Прочее</p>
-          <img src={DiamondCanvas} alt='AnotherTwo'/>
+          <img src={anotherTwoo} alt='AnotherTwo'/>
           <p className={styles.projTitle}>Другие дизайны, макеты и наброски 2</p>
         </div>
         </NavLink>
@@ -74,7 +76,7 @@ export const Projects = () => {
         <div className={styles.lowProj}>
           <div className={styles.blackGrad}/>
           <p className={styles.types}>Прочее</p>
-          <img src={DiamondCanvas} alt='AnotherThree'/>
+          <img src={anotherThreee} alt='AnotherThree'/>
           <p className={styles.projTitle}>Другие дизайны, макеты и наброски 3</p>
         </div>
         </NavLink>

@@ -12,6 +12,7 @@ import sasha from '../../assets/another2/sasha_pavlova.png'
 import deserts from '../../assets/another2/pp_deserts.png'
 import sasha2 from '../../assets/another2/sasha_pavlova2.png'
 import semenova from '../../assets/another2/semenova_mary.png'
+import babyTalk from '../../assets/another2/baby_talk.png'
 import sharm1 from '../../assets/another2/sharm.png'
 import sharm2 from '../../assets/another2/sharm2.png'
 import TopSide from '../../components/TopSIde/TopSide'
@@ -26,19 +27,31 @@ export default function AnotherTwo() {
       <div className={styles.title}><img className={styles.image} src={titler} alt='Разделитель'/>ДРУГИЕ ДИЗАЙНЫ, МАКЕТЫ И НАБРОСКИ 2</div>
       <div className={styles.description}>Данная страница будет без подписей, так как дизайны довольно старые и их очень много :)</div>
       <div className={styles.content}>
-        <img src={egg} alt='Egg'/>
-        <img src={seMary} alt='Se+Mary'/>
-        <img src={uslugi} alt='Services'/>
-        <img src={alena} alt='Alena Bakery'/>
-        <img src={tovari} alt='Items'/>
-        <img src={future1} alt='Future'/>
-        <img src={future2} alt='Future'/>
-        <img src={sasha} alt='Sasha Pavlova'/>
-        <img src={deserts} alt='PP deserts'/>
-        <img src={sasha2} alt='Sasha Pavlova'/>
-        <img src={semenova} alt='Semenova Mary'/>
-        <img src={sharm1} alt='Sharm'/>
-        <img src={sharm2} alt='Sharm Reverse'/>
+        <div className={styles.first}>
+          <img className={styles.egg} src={egg} alt='Egg'/>
+          <img className={styles.semary} src={seMary} alt='Se+Mary'/>
+        </div>
+        <div className={styles.second}> 
+          <div className={styles.sides}>
+            <img className={styles.uslugi} src={uslugi} alt='Services'/>
+            <img className={styles.tovari} src={tovari} alt='Items'/>
+            <img className={styles.future2} src={future2} alt='Future'/>
+            <img className={styles.deserts} src={deserts} alt='PP deserts'/> 
+          </div>
+          <div className={styles.sides}>
+            <img className={styles.alena} src={alena} alt='Alena Bakery'/>
+            <img className={styles.future1} src={future1} alt='Future'/>
+            <img className={styles.sasha} src={sasha} alt='Sasha Pavlova'/>
+            <img className={styles.sasha2} src={sasha2} alt='Sasha Pavlova'/>
+          </div>
+        </div>
+
+        <img className={styles.semenova} src={semenova} alt='Semenova Mary'/>
+        <img className={styles.babyTalk} src={babyTalk} alt='Baby Talk'/>
+        <div className={styles.third}>
+          <img className={styles.sharm} src={sharm1} alt='Sharm'/>
+          <img className={styles.sharm} src={sharm2} alt='Sharm Reverse'/>
+        </div>
       </div>
     </div>
   )

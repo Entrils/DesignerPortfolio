@@ -21,15 +21,19 @@ export default function AnotherThree() {
       <div className={styles.title}><img className={styles.image} src={titler} alt='Разделитель'/>ДРУГИЕ ДИЗАЙНЫ, МАКЕТЫ И НАБРОСКИ 3</div>
       <div className={styles.description}>Данная страница будет без подписей, так как дизайны довольно старые и их очень много :)</div>
       <div className={styles.content}>
-          <img src={cup} alt='Lego Cup'/>
-          <img src={badge} alt='Lego Badge'/>
-          <img src={maska} alt='Lego Maska'/>
-          <img src={ugolek} alt='Ugolek Logotypes'/>
-          <img src={menu} alt='Ugolek menu'/>
-          <img src={ugolek2} alt='Ugolek logotypes'/>
-          <img src={semary} alt='Se+Mary'/>
-          <img src={pattern} alt='cafe pattern'/>
-          <img src={nakleiki} alt='cafe nakleiki'/>
+          <img className={styles.cup} src={cup} alt='Lego Cup'/>
+          <div className={styles.module1}>
+            <img className={styles.badge} src={badge} alt='Lego Badge'/>
+            <img className={styles.maska} src={maska} alt='Lego Maska'/>
+          </div>
+          <img className={styles.ugolek} src={ugolek} alt='Ugolek Logotypes'/>
+          <img className={styles.menu} src={menu} alt='Ugolek menu'/>
+          <img className={styles.ugolek2} src={ugolek2} alt='Ugolek logotypes'/>
+          <img className={styles.semary} src={semary} alt='Se+Mary'/>
+          <div className={styles.module2}>
+            <img className={styles.pattern} src={pattern} alt='cafe pattern'/>
+            <img className={styles.nakleiki} src={nakleiki} alt='cafe nakleiki'/>
+          </div>
       </div>
     </div>
   )

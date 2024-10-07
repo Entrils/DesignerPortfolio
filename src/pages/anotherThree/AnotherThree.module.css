@@ -28,3 +28,70 @@
     margin-top: 50px;
     font-family: var(--font-second);
 }
+
+.content{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.module1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:25px;
+}
+
+.module2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:25px;
+}
+
+.cup{
+    width: 1575px;
+    height: 902px;
+}
+
+.badge{
+    width: 724px;
+    height: 591px;
+}
+
+.maska{
+    width: 819px;
+    height: 591px;
+}
+
+.ugolek{
+    width: 1575px;
+    height: 870px;
+}
+
+.menu{
+    width: 1575px;
+    height: 1107px;
+}
+
+.ugolek2{
+    width: 1575px;
+    height: 1016px;
+}
+
+.semary{
+    width: 1575px;
+    height: 649px;
+}
+
+.pattern{
+    width: 797px;
+    height: 493px;
+}
+
+.nakleiki{
+    width: 755px;
+    height: 493px;
+}

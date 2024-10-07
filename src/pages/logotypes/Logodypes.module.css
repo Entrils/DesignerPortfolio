@@ -33,7 +33,34 @@
     display: flex;
     width: 100%;
     flex-direction: row;
+    margin-top: 50px;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap:10px;
+    gap: 50px;
+}
+
+.quadImg{
+    width: 520px;
+    height: 520px;
+    border: solid 1px white;
+}
+
+.potolok_info{
+    width: 1060px;
+    height: 1060px;
+}
+
+.potolok{
+    width: 1080px;
+    height: 520px;
+}
+
+.spherium{
+    width: 1658px;
+    height: 920px;
+}
+
+.babyTalk{
+    width: 1060px;
+    height: 520px;
 }

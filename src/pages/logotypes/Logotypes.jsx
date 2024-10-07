@@ -26,20 +26,22 @@ export default function Logotypes() {
        <div className={styles.title}><img className={styles.image} src={titler} alt='Разделитель'/>ПАК ЛОГОТИПОВ</div>
        <div className={styles.description}>Подборка логотипов за всю мою работу дизайнером</div>
        <div className={styles.imagesWrapper}>
-          <img  src={doddler} alt='doddler'/>
-          <img  src={se_mary} alt='se_mary'/>
-          <img  src={ugolek} alt='ugolek'/>
-          <img  src={neko} alt='neko'/>
-          <img  src={zoo_shop} alt='zoo_shop'/>
-          <img  src={alena} alt='alena_bakery'/>
-          <img  src={sakura} alt='sakura'/>
-          <img  src={potolok} alt='potolok'/>
-          <img  src={potolok_info} alt='potolok_info'/>
-          <img  src={se_mary_v2} alt='se_mary_v2'/>
-          <img  src={sasha} alt='sasha_pavlova'/>
-          <img  src={baby_talk} alt='baby_talk'/>
-          <img  src={dragon} alt='black_dragon'/>
-          <img  src={spherium} alt='spherium'/>
+          <img className={styles.quadImg} src={doddler} alt='doddler'/>
+          <img className={styles.quadImg} src={se_mary} alt='se_mary'/>
+          <img className={styles.quadImg} src={ugolek} alt='ugolek'/>
+          <img className={styles.quadImg} src={neko} alt='neko'/>
+          <img className={styles.quadImg} src={zoo_shop} alt='zoo_shop'/>
+          <img className={styles.quadImg} src={alena} alt='alena_bakery'/>
+          <img className={styles.quadImg} src={sakura} alt='sakura'/>
+          <img className={styles.potolok} src={potolok} alt='potolok'/>
+
+          <img className={styles.potolok_info} src={potolok_info} alt='potolok_info'/>
+          <img className={styles.quadImg} src={se_mary_v2} alt='se_mary_v2'/>
+          <img className={styles.quadImg} src={sasha} alt='sasha_pavlova'/>
+          
+          <img className={styles.babyTalk} src={baby_talk} alt='baby_talk'/>
+          <img className={styles.quadImg} src={dragon} alt='black_dragon'/>
+          <img className={styles.spherium} src={spherium} alt='spherium'/>
        </div>
     </div>
   )
