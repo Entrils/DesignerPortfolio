@@ -18,24 +18,27 @@ export const Projects = () => {
       <div className={styles.description}>Designed by Semenova Mary.</div>
       <div className={styles.content}>
 
-      <NavLink to={FORUM_ROUTE}>
-        <div className={styles.lowProj}>
-          <div className={styles.blueGrad}/>
-          <p className={styles.types}>Web Design</p>
-         <img src={ArtForum} alt='Artist Forum'/>
-          <p className={styles.projTitle}>Форум Художников</p>
-        </div>
-        </NavLink>
+        <div className={styles.module}>
+          <NavLink to={FORUM_ROUTE}>
+            <div className={styles.lowProj}>
+              <div className={styles.blueGrad}/>
+              <p className={styles.types}>Web Design</p>
+              <img src={ArtForum} alt='Artist Forum'/>
+              <p className={styles.projTitle}>Форум Художников</p>
+            </div>
+          </NavLink>
         
-        <NavLink to={LOGO_ROUTE}>
-        <div className={styles.lowProj}>
-        <div className={styles.yellowGrad}/>
-          <p className={styles.types}>Logotypes</p>
-          <img src={Neko} alt='Пак логотипов'/>
-          <p className={styles.projTitle}>Пак логотипов</p>
+          <NavLink to={LOGO_ROUTE}>
+            <div className={styles.lowProj}>
+              <div className={styles.yellowGrad}/>
+              <p className={styles.types}>Logotypes</p>
+              <img src={Neko} alt='Пак логотипов'/>
+              <p className={styles.projTitle}>Пак логотипов</p>
+            </div>
+          </NavLink>
         </div>
-        </NavLink>
 
+          <div className={styles.module}>
         <NavLink to={STUDIO_ROUTE}>
         <div className={styles.lowProj}>
           <div className={styles.lightBlueGrad}/>
@@ -53,6 +56,8 @@ export const Projects = () => {
           <p className={styles.projTitle}>Алмазная мозаика</p>
         </div>
         </NavLink>
+          </div>
+
 
         <NavLink to={ANOTHERONE_ROUTE}>
         <div className={styles.highProj}>
@@ -62,7 +67,8 @@ export const Projects = () => {
           <p className={styles.projTitleHigh}>Другие дизайны, макеты и наброски </p> 
         </div>
         </NavLink>
-
+        
+        <div className={styles.module}>
         <NavLink to={ANOTHERTWO_ROUTE}>
         <div className={styles.lowProj}>
           <div className={styles.blackGrad}/>
@@ -80,6 +86,8 @@ export const Projects = () => {
           <p className={styles.projTitle}>Другие дизайны, макеты и наброски 3</p>
         </div>
         </NavLink>
+
+        </div>
       </div>
       </div>
   )
