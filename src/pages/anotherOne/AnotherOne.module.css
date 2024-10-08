@@ -78,3 +78,61 @@
     justify-content: space-between;
     gap: 50px;
 }
+
+@media screen and (max-width: 1030px){
+    .title{
+        font-size: 28px;
+        align-items: center;
+        text-align: center;
+    }
+    .image{
+        width: 40px;
+        height: 40px;
+    }
+    .description{
+        width: 320px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .water{
+        width: 320px;
+        height: 178px;
+    }
+    .water img{
+        width: 320px;
+        height: 178px;
+    }
+    .phones{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 75px;
+    }
+    .phoneee{
+        width: 320px;
+    }
+    .worlds{
+        width: 320px;
+        height: 216px;
+    }
+    .worlds img{
+        width: 320px;
+        height: 216px;
+    }
+
+    .upper{
+        flex-direction: column;
+    }
+
+    .mobile{
+        width: 320px;
+    }
+    .mocaps{
+        gap:25px;
+    }
+    .vk{
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+}

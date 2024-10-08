@@ -59,3 +59,31 @@
     width: 1680px;
     height: 975px;
 }
+
+@media screen and (max-width: 1030px){
+    .title{
+        font-size: 28px;
+        align-items: center;
+        text-align: center;
+    }
+    .image{
+        width: 40px;
+        height: 40px;
+    }
+    .description{
+        width: 320px;
+        text-align: center;
+    }
+    .horizontal{
+        flex-direction: column;
+    }
+    
+    .horizontal img{
+        width: 320px;
+        height: 443px;
+    }
+    .vertical img{
+        width: 320px;
+        height: 186px;
+    }
+}

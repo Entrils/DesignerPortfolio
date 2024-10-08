@@ -14,6 +14,7 @@
 .title{
     display: flex;
     flex-direction: column;
+    text-align: center;
     color: white;
     font-size: 40px;
     gap: 10px;
@@ -85,4 +86,34 @@
 .panelScreenContainer{
     display: flex;
     margin-top: 50px;
+}
+
+@media screen and (max-width: 1030px){
+    .title{
+        font-size: 28px;
+    }
+    .image{
+        width: 40px;
+        height: 40px;
+    }
+    .colors{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+        margin-top: 50px;
+    }
+    .description{
+        width: 320px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .screenDesc{
+        margin-top: 100px;
+        width: 320px;
+    }
+    .panelScreen{
+        width: 320px;
+    }
 }

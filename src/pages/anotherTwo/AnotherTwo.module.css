@@ -129,3 +129,96 @@
     width: 775px;
     height: 775px;
 }
+
+@media screen and (max-width: 1030px){
+    .title{
+        font-size: 28px;
+        align-items: center;
+        text-align: center;
+    }
+    .image{
+        width: 40px;
+        height: 40px;
+    }
+    .description{
+        width: 320px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .first{
+        flex-direction: column;
+    }
+    
+    .second{
+        flex-direction: column;
+    }
+    
+    .third{
+        flex-direction: column;
+    }
+    .egg{
+        width: 320px;
+        height: 423px;
+    }
+    
+    .semary{
+        width: 320px;
+        height: 421px;
+    }
+    
+    .uslugi{
+        width: 320px;
+        height: 218px;
+    }
+    
+    .alena{
+        width: 320px;
+        height: 409px;
+    }
+    
+    .tovari{
+        width: 320px;
+        height: 218px;
+    }
+    
+    .future1{
+        width: 320px;
+        height: 400px;
+    }
+    
+    .future2{
+        width: 320px;
+        height: 400px;
+    }
+    
+    .sasha{
+        width: 320px;
+        height: 405px;
+    }
+    
+    .deserts{
+        width: 320px;
+        height: 350px;
+    }
+    
+    .sasha2{
+        width: 320px;
+        height: 510px;
+    }
+    
+    .semenova{
+        width: 320px;
+        height: 128px;
+    }
+    
+    .babyTalk{
+        width: 320px;
+        height: 225px;
+    }
+    
+    .sharm{
+        width: 320px;
+        height: 320px;
+    }
+}

@@ -95,3 +95,73 @@
     width: 755px;
     height: 493px;
 }
+
+@media screen and (max-width: 1030px){
+    .title{
+        font-size: 28px;
+        align-items: center;
+        text-align: center;
+    }
+    .image{
+        width: 40px;
+        height: 40px;
+    }
+    .description{
+        width: 320px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .module1{
+        flex-direction: column;
+    }
+    .module2{
+        flex-direction: column;
+    }
+    
+    .cup{
+        width: 320px;
+        height: 183px;
+    }
+    
+    .badge{
+        width: 320px;
+        height: 261px;
+    }
+    
+    .maska{
+        width: 320px;
+        height: 231px;
+    }
+    
+    .ugolek{
+        width: 320px;
+        height: 183px;
+    }
+    
+    .menu{
+        width: 320px;
+        height: 225px;
+    }
+    
+    .ugolek2{
+        width: 320px;
+        height: 195px;
+    }
+    
+    .semary{
+        width: 320px;
+        height: 132px;
+    }
+    
+    .pattern{
+        width: 320px;
+        height: 198px;
+    }
+    
+    .nakleiki{
+        width: 320px;
+        height: 192px;
+    }
+}

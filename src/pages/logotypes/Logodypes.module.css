@@ -64,3 +64,46 @@
     width: 1060px;
     height: 520px;
 }
+
+@media screen and (max-width: 1030px){
+    .title{
+    font-size: 28px;
+    }
+    .image{
+        height: 40px;
+        width: 40px;
+    }
+    .description{
+        width: 320px;
+        align-items: center;
+        text-align: center;
+    }
+    .imagesWrapper{
+        flex-direction: column;
+        width: 320px;
+        margin-top: 50px;
+        gap: 50px;
+    }
+    .quadImg{
+        width: 320px;
+        height: 320px;
+    }
+    .potolok_info{
+        width: 320px;
+        height: 320px;
+    }
+    .potolok{
+        width: 320px;
+        height: 320px;
+    }
+    
+    .spherium{
+        width: 320px;
+        height: 320px;
+    }
+    
+    .babyTalk{
+        width: 320px;
+        height: 320px;
+    }
+}

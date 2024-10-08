@@ -27,9 +27,9 @@ export default function AnotherOne() {
       </div>
       <div className={styles.description}>Макеты кастомной темы на телефон</div>
       <div className={styles.phones}>
-        <img src={phone1} alt='Phone 1'/>
-        <img src={phone2} alt='Phone 2'/>
-        <img src={phone3} alt='Phone 3'/>
+        <img className={styles.phoneee} src={phone1} alt='Phone 1'/>
+        <img className={styles.phoneee} src={phone2} alt='Phone 2'/>
+        <img className={styles.phoneee} src={phone3} alt='Phone 3'/>
       </div>
       <div className={styles.description}>Логотип и цветовые решения для современных телефонов 2WORLDS</div>
       <div className={styles.worlds}>
@@ -38,18 +38,18 @@ export default function AnotherOne() {
       <div className={styles.description}>Мокапы разных компаний и логотипов</div>
       <div className={styles.mocaps}>
         <div className={styles.upper}>
-          <img src={zooshop1} alt='Zoo shop'/>
+          <img className={styles.mobile} src={zooshop1} alt='Zoo shop'/>
             <div className={styles.rightside}>
-              <img src={zooshop2} alt='Zoo shop'/>
-              <img src={zooshop3} alt='Zoo shop'/>
+              <img className={styles.mobile} src={zooshop2} alt='Zoo shop'/>
+              <img className={styles.mobile} src={zooshop3} alt='Zoo shop'/>
             </div>
         </div>
-          <img src={neko} alt='Neko'/>
+          <img className={styles.mobile} src={neko} alt='Neko'/>
       </div>
       <div className={styles.description}>Полиграфия и оформление ВК</div>
       <div className={styles.vk}>
-        <img src={neonsh1} alt='Neon Shik'/>
-        <img src={neonsh2} alt='Neon Shik'/>
+        <img className={styles.mobile} src={neonsh1} alt='Neon Shik'/>
+        <img className={styles.mobile} src={neonsh2} alt='Neon Shik'/>
       </div>
     </div>
   )
