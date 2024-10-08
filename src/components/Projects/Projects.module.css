@@ -32,6 +32,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 48px;
     font-family: var(--font-prjects);
 }
@@ -128,8 +129,8 @@
 .projTitle{
     display: flex;
     position: absolute;
-    margin-top: 350px;
-    margin-left: 15px;
+    padding-top: 350px;
+    padding-left: 15px;
     font-size: 28px;
     color: white;
     z-index: 2;
@@ -176,4 +177,74 @@
     background-color: #121212;
     border-radius: 25px;
     font-family: var(--font-second);
+}
+
+@media screen and (max-width: 1030px){
+    .module{
+        flex-direction: column;
+        align-items: center;
+    }
+    .projTitle{
+        padding-top: 175px;
+        padding-left: 10px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .lowProj{
+        width: 320px;
+        height: 200px;
+    }
+    .lowProj img{
+        width: 320px;
+        height: 200px;
+    }
+    .highProj{
+        width: 320px;
+        height: 200px;
+    }
+    .highProj img{
+        width: 320px;
+        height: 200px;
+    }
+    .projTitleHigh{
+        padding-top: 175px;
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .types{
+        margin-left: 10px;
+        font-size: 15px;
+        width: 110px;
+    }
+    .typesHigh{
+        margin-left: 10px;
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: 500;
+        width: 100px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 15px;
+    }
+    .orangeGrad{
+        width: 320px;
+        height: 200px;
+    }
+    .blueGrad{
+        width: 320px;
+        height: 200px;
+    }
+    .yellowGrad{
+        width: 320px;
+        height: 200px;
+    }
+    .lightBlueGrad{
+        width: 320px;
+        height: 200px;
+    }
+    .blackGrad{
+        width: 320px;
+        height: 200px;
+    }
 }

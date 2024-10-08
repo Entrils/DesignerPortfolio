@@ -45,3 +45,15 @@
     font-weight: 500;
     font-family: var(--font-second);
 }
+
+@media screen and (max-width: 1030px){
+    .description{
+        width: 320px;
+    }
+    .container{
+        margin-top: 50px;
+    }
+    .title{
+        font-size: 28px;
+    }
+}

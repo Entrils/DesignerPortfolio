@@ -48,3 +48,20 @@
     justify-content: space-between;
     gap:15px;
 }
+
+@media screen and (max-width: 1030px){
+    .mail a{
+        font-size: 28px;
+    }
+    .image{
+        width: 40px;
+        height: 40px;
+    }
+    .imageProps{
+        width: 50px;
+        height: 50px;
+    }
+    .title{
+        font-size: 32px;
+    }
+}
