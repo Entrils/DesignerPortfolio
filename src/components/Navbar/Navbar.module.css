@@ -46,6 +46,15 @@
     width: 200px;
 }
 
+.title:hover{
+    background-color: #210056;
+    border-color: #210056;
+}
+
+.menuItems a:hover{
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 1030px){
     .menuItems li{
         display: none;
