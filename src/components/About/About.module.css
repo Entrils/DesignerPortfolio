@@ -1,59 +1,147 @@
 @import "../../vars.css";
+
 .container{
-    position: relative;
+    width: min(var(--content-width), 92%);
+    margin: var(--section-gap) auto 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: -50px;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 .title{
     display: flex;
     flex-direction: column;
-    color: white;
-    font-size: 40px;
-    gap: 10px;
-    font-family: var(--font-second);
-    justify-content: center;
     align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: clamp(28px, 3vw, 38px);
+    font-family: var(--font-second);
     font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .image{
-    width: 57px;
-    height: 57px;
+    width: 48px;
+    height: 48px;
 }
 
 .description{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 900px;
-    flex-wrap: wrap;
-    margin-top: 80px;
-    color: white;
-    display: flex;
+    width: min(980px, 100%);
+    margin-top: 24px;
+    padding: 40px 44px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 26px;
+    background:
+        radial-gradient(circle at 85% 15%, rgba(50, 148, 190, 0.28), transparent 46%),
+        radial-gradient(circle at 15% 85%, rgba(73, 0, 191, 0.3), transparent 45%),
+        linear-gradient(145deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02));
+    backdrop-filter: blur(3px);
 }
 
 .description p{
+    margin: 0;
+    color: #f5f7ff;
     text-align: center;
-    font-size: 24px;
+    font-size: 23px;
+    line-height: 1.55;
     font-weight: 500;
     font-family: var(--font-second);
 }
 
-@media screen and (max-width: 1030px){
-    .description{
-        width: 320px;
-    }
+.description p + p{
+    margin-top: 18px;
+}
+
+.lead{
+    color: #7dd4ff;
+    font-size: 27px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+}
+
+.badges{
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.badges span{
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    color: #d8e6ff;
+    font-family: var(--font-prjects);
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.26);
+}
+
+@media screen and (max-width: 1024px){
     .container{
-        margin-top: 50px;
+        margin-top: 64px;
     }
+
+    .description{
+        margin-top: 20px;
+        padding: 24px 18px;
+        border-radius: 20px;
+    }
+
+    .description p{
+        font-size: 18px;
+    }
+
+    .lead{
+        font-size: 21px;
+    }
+
+    .badges span{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .description p{
+        font-size: 17px;
+    }
+
+    .lead{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .description{
+        padding: 20px 14px;
+    }
+
+    .description p{
+        font-size: 16px;
+    }
+
+    .badges{
+        gap: 8px;
+    }
+
+    .badges span{
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+@media screen and (max-width: 375px){
     .title{
-        font-size: 28px;
+        letter-spacing: 0.4px;
+    }
+
+    .description p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .description{
+        padding: 18px 12px;
     }
 }

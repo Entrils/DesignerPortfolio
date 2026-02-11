@@ -1,13 +1,32 @@
+@import "./vars.css";
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  font-family: var(--font-second), Arial, Helvetica, sans-serif;
 }
 
 html{
   scroll-behavior: smooth;
 }
+
 body{
-  height: 100%;
+  min-height: 100%;
+  color: var(--color-main);
+  background:
+    radial-gradient(circle at 12% 8%, rgba(73, 0, 191, 0.22), transparent 24%),
+    radial-gradient(circle at 85% 6%, rgba(50, 148, 190, 0.16), transparent 22%),
+    linear-gradient(180deg, #07070a 0%, #040406 100%),
+    #050505;
+  overflow-x: hidden;
+}
+
+a{
+  color: inherit;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
 }

@@ -15,42 +15,80 @@ import neonsh2 from '../../assets/another1/neonsh2.png'
 import TopSide from '../../components/TopSIde/TopSide'
 import BackArrow from '../../components/BackArrow/BackArrow'
 
+const groups = [
+  {
+    title: 'Ключевые концепты',
+    gridClass: 'doubleGrid',
+    items: [
+      { src: water, alt: 'Under water landing' },
+      { src: worlds, alt: '2 Worlds branding' }
+    ]
+  },
+  {
+    title: 'Мобильные темы',
+    gridClass: 'tripleGrid',
+    items: [
+      { src: phone1, alt: 'Phone theme 1' },
+      { src: phone2, alt: 'Phone theme 2' },
+      { src: phone3, alt: 'Phone theme 3' }
+    ]
+  },
+  {
+    title: 'Zoo Shop',
+    gridClass: 'tripleGrid',
+    items: [
+      { src: zooshop1, alt: 'Zoo shop mockup 1' },
+      { src: zooshop2, alt: 'Zoo shop mockup 2' },
+      { src: zooshop3, alt: 'Zoo shop mockup 3' }
+    ]
+  },
+  {
+    title: 'Neko',
+    gridClass: 'singleGrid',
+    items: [
+      { src: neko, alt: 'Neko mockup' }
+    ]
+  },
+  {
+    title: 'Neon Shik',
+    gridClass: 'doubleGrid',
+    items: [
+      { src: neonsh1, alt: 'Neon Shik print 1' },
+      { src: neonsh2, alt: 'Neon Shik print 2' }
+    ]
+  }
+]
+
 export default function AnotherOne() {
   return (
-    <div className={styles.container}>
+    <section className={styles.page}>
       <TopSide/>
       <BackArrow/>
-      <div className={styles.title}><img className={styles.image} src={titler} alt='Разделитель'/>ДРУГИЕ ДИЗАЙНЫ, МАКЕТЫ И НАБРОСКИ</div>
-      <div className={styles.description}>Блок для сайта</div>
-      <div className={styles.water}>
-        <img src={water} alt='Under Water'/>
-      </div>
-      <div className={styles.description}>Макеты кастомной темы на телефон</div>
-      <div className={styles.phones}>
-        <img className={styles.phoneee} src={phone1} alt='Phone 1'/>
-        <img className={styles.phoneee} src={phone2} alt='Phone 2'/>
-        <img className={styles.phoneee} src={phone3} alt='Phone 3'/>
-      </div>
-      <div className={styles.description}>Логотип и цветовые решения для современных телефонов 2WORLDS</div>
-      <div className={styles.worlds}>
-        <img src={worlds} alt='2 WORLDS'/>
-      </div>
-      <div className={styles.description}>Мокапы разных компаний и логотипов</div>
-      <div className={styles.mocaps}>
-        <div className={styles.upper}>
-          <img className={styles.mobile} src={zooshop1} alt='Zoo shop'/>
-            <div className={styles.rightside}>
-              <img className={styles.mobile} src={zooshop2} alt='Zoo shop'/>
-              <img className={styles.mobile} src={zooshop3} alt='Zoo shop'/>
-            </div>
+
+      <header className={styles.header}>
+        <div className={styles.title}>
+          <img loading='lazy' decoding='async' className={styles.image} src={titler} alt='Разделитель'/>
+          ДРУГИЕ ДИЗАЙНЫ, МАКЕТЫ И НАБРОСКИ
         </div>
-          <img className={styles.mobile} src={neko} alt='Neko'/>
+        <p className={styles.description}>
+          Разноформатные работы: лендинги, мобильные темы, мокапы и полиграфия
+        </p>
+      </header>
+
+      <div className={styles.groups}>
+        {groups.map((group) => (
+          <section className={styles.group} key={group.title}>
+            <h3 className={styles.groupTitle}>{group.title}</h3>
+            <div className={`${styles.groupGrid} ${styles[group.gridClass]}`}>
+              {group.items.map((work) => (
+                <figure className={styles.card} key={work.alt}>
+                  <img loading='lazy' decoding='async' src={work.src} alt={work.alt}/>
+                </figure>
+              ))}
+            </div>
+          </section>
+        ))}
       </div>
-      <div className={styles.description}>Полиграфия и оформление ВК</div>
-      <div className={styles.vk}>
-        <img className={styles.mobile} src={neonsh1} alt='Neon Shik'/>
-        <img className={styles.mobile} src={neonsh2} alt='Neon Shik'/>
-      </div>
-    </div>
+    </section>
   )
 }

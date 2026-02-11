@@ -1,67 +1,92 @@
 @import "../../vars.css";
 
 .container{
-    color: white;
-    margin-top: 40px;
+    width: min(var(--content-width), 92%);
+    margin: var(--section-gap) auto 28px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-l);
+    background: var(--color-surface);
+    padding: 24px 18px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    justify-content: center;
     align-items: center;
-    width: 100vw;
-    margin-bottom: 20px;
-    gap:15px;
+    gap: 14px;
 }
 
 .title{
     display: flex;
     flex-direction: column;
-    color: white;
-    font-size: 40px;
-    gap: 15px;
-    font-family: var(--font-second);
-    justify-content: center;
     align-items: center;
+    gap: 10px;
+    font-size: clamp(28px, 3vw, 38px);
+    font-family: var(--font-second);
     font-weight: 600;
 }
 
 .image{
-    width: 57px;
-    height: 57px;
-}
-
-.imageProps{
-    width: 71px;
-    height: 71px;
-}
-
-
-.mail a{
-    color: #3294BE;
-    font-size: 40px;
-    font-family: var(--font-second);
-    text-decoration: none;
+    width: 48px;
+    height: 48px;
 }
 
 .ContactImages{
     display: flex;
-    justify-content: space-between;
-    gap:15px;
+    gap: 12px;
 }
 
-@media screen and (max-width: 1030px){
+.ContactImages a{
+    border-radius: 14px;
+}
+
+.ContactImages a:focus-visible{
+    outline: 2px solid #3294be;
+    outline-offset: 2px;
+}
+
+.imageProps{
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    border: 1px solid var(--color-border);
+    background: rgba(0, 0, 0, 0.35);
+    padding: 10px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.imageProps:hover{
+    transform: translateY(-2px);
+    border-color: rgba(143, 217, 255, 0.8);
+}
+
+.mail a{
+    color: #8fd9ff;
+    font-size: clamp(18px, 3vw, 30px);
+    font-family: var(--font-second);
+    text-decoration: none;
+    letter-spacing: 0.4px;
+}
+
+.mail a:focus-visible{
+    outline: 2px solid #3294be;
+    outline-offset: 2px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 430px){
+    .container{
+        padding: 18px 12px;
+    }
+
     .mail a{
-        font-size: 28px;
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        word-break: break-word;
+        text-align: center;
     }
-    .image{
-        width: 40px;
-        height: 40px;
-    }
+}
+
+@media screen and (max-width: 320px){
     .imageProps{
         width: 50px;
         height: 50px;
-    }
-    .title{
-        font-size: 32px;
     }
 }

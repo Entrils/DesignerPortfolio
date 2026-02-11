@@ -8,24 +8,36 @@ import canvas4 from '../../assets/diamonds/canvas4.png'
 import TopSide from '../../components/TopSIde/TopSide'
 import BackArrow from '../../components/BackArrow/BackArrow'
 
+const works = [
+  { src: canvas1, alt: 'Алмазная мозаика 1' },
+  { src: canvas2, alt: 'Алмазная мозаика 2' },
+  { src: canvas3, alt: 'Алмазная мозаика 3' },
+  { src: canvas4, alt: 'Алмазная мозаика 4' }
+]
+
 export default function Diamond() {
   return (
-    <div className={styles.container}>
+    <section className={styles.page}>
       <TopSide/>
       <BackArrow/>
-      <div className={styles.title}><img className={styles.image} src={titler} alt='Разделитель'/>АЛМАЗНАЯ МОЗАИКА</div>
-      <div className={styles.description}>Редактирование фото, подбор цветов для подготовки алмазой мозаики по фото</div>
 
-      <div className={styles.content}>
-        <div className={styles.horizontal}>
-            <img src={canvas1} alt='canvas1'/>
-            <img src={canvas2} alt='canvas2'/>
+      <header className={styles.header}>
+        <div className={styles.title}>
+          <img loading='lazy' decoding='async' className={styles.image} src={titler} alt='Разделитель'/>
+          АЛМАЗНАЯ МОЗАИКА
         </div>
-        <div className={styles.vertical}>
-          <img src={canvas3} alt='canvas3'/>
-          <img src={canvas4} alt='canvas4'/>
-        </div>
+        <p className={styles.description}>
+          Подготовка изображения под алмазную выкладку: цветокоррекция, детализация и тональная сборка
+        </p>
+      </header>
+
+      <div className={styles.gallery}>
+        {works.map((work) => (
+          <figure className={styles.card} key={work.alt}>
+            <img loading='lazy' decoding='async' src={work.src} alt={work.alt}/>
+          </figure>
+        ))}
       </div>
-      </div>
+    </section>
   )
 }

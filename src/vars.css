@@ -3,11 +3,66 @@
 @import "@fontsource/abhaya-libre";
 
 :root{
-    /* цвета */
-    --color-main: white;
+    --color-main: #ffffff;
+    --color-surface: rgba(255, 255, 255, 0.06);
+    --color-border: rgba(255, 255, 255, 0.16);
+    --color-accent: #4900bf;
+    --color-accent-2: #3294be;
+    --color-muted: #ccd0da;
 
-    /* шрифты */
     --font-main: "MuseoModerno";
     --font-second: "Montserrat";
     --font-prjects: "Abhaya Libre";
+
+    --radius-m: 16px;
+    --radius-l: 24px;
+    --content-width: 1200px;
+    --shadow-soft: 0 20px 60px rgba(0, 0, 0, 0.35);
+    --section-gap: 80px;
+    --hover-lift: translateY(-6px);
+    --hover-shadow: 0 18px 38px rgba(0, 0, 0, 0.32);
+    --hover-duration: 260ms;
+}
+
+@media screen and (max-width: 1440px){
+    :root{
+        --content-width: 1120px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    :root{
+        --content-width: 940px;
+        --radius-l: 20px;
+        --section-gap: 64px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    :root{
+        --content-width: 700px;
+        --radius-m: 14px;
+        --section-gap: 52px;
+        --hover-lift: translateY(-4px);
+    }
+}
+
+@media screen and (max-width: 430px){
+    :root{
+        --content-width: 100%;
+        --section-gap: 48px;
+        --hover-lift: translateY(-2px);
+    }
+}
+
+@media screen and (max-width: 375px){
+    :root{
+        --section-gap: 44px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    :root{
+        --section-gap: 40px;
+    }
 }

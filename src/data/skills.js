@@ -22,12 +22,12 @@ export const data = [
         "skillPcnt": "59"
     },
     {
-        "title": "Mijorny",
+        "title": "Midjourney",
         "imageSrc": Mijorny,
         "skillPcnt": "50"
     },
     {
-        "title": "Adobe Premier",
+        "title": "Adobe Premiere Pro",
         "imageSrc": Pr,
         "skillPcnt": "26"
     },

@@ -1,138 +1,144 @@
 @import "../../vars.css";
 
-.container{
-    position: relative;
+.page{
+    width: min(var(--content-width), 92%);
+    margin: 18px auto 52px;
+}
+
+.header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 59px;
-    z-index: 1;
-    margin-left: 10%;
-    margin-right: 10%;
+    gap: 14px;
 }
+
 .title{
     display: flex;
     flex-direction: column;
-    color: white;
-    font-size: 40px;
-    gap: 10px;
-    font-family: var(--font-second);
-    justify-content: center;
     align-items: center;
-    font-weight: 600;
-}
-.description{
-    display: flex;
-    color: white;
-    margin-top: 75px;
+    gap: 10px;
+    text-align: center;
+    font-size: clamp(28px, 3vw, 38px);
     font-family: var(--font-second);
+    font-weight: 600;
+    max-width: 100%;
 }
 
-.water{
-    display: flex;
-    margin-top: 50px;
-    width: 1560px;
-    height: 870px;
+.image{
+    width: 48px;
+    height: 48px;
 }
 
-.phones{
-    display: flex;
-    margin-top: 50px;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 75px;
+.description{
+    color: var(--color-muted);
+    text-align: center;
+    max-width: 860px;
 }
 
-.worlds{
-    display: flex;
-    margin-top: 50px;
-    width: 1560px;
-    height: 1054px;
-}
-
-.mocaps{
+.groups{
+    margin-top: 24px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 50px;
-    margin-top: 50px;
+    gap: 18px;
 }
-.upper{
+
+.group{
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-m);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 14px;
+}
+
+.groupTitle{
+    margin: 0 0 10px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #d6ddf2;
+}
+
+.groupGrid{
+    display: grid;
+    gap: 12px;
+}
+
+.tripleGrid{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.doubleGrid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.singleGrid{
+    grid-template-columns: 1fr;
+}
+
+.card{
+    margin: 0;
+    min-height: 190px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 25px;
-}
-.rightside{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    transition: transform var(--hover-duration) ease, box-shadow var(--hover-duration) ease, border-color var(--hover-duration) ease;
 }
 
-.vk{
-    display: flex;
-    margin-top: 50px;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 50px;
+.card img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: transform calc(var(--hover-duration) + 60ms) ease;
 }
 
-@media screen and (max-width: 1030px){
-    .title{
-        font-size: 28px;
-        align-items: center;
-        text-align: center;
-    }
-    .image{
-        width: 40px;
-        height: 40px;
-    }
-    .description{
-        width: 320px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-    .water{
-        width: 320px;
-        height: 178px;
-    }
-    .water img{
-        width: 320px;
-        height: 178px;
-    }
-    .phones{
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 75px;
-    }
-    .phoneee{
-        width: 320px;
-    }
-    .worlds{
-        width: 320px;
-        height: 216px;
-    }
-    .worlds img{
-        width: 320px;
-        height: 216px;
+.card:hover{
+    transform: var(--hover-lift);
+    box-shadow: var(--hover-shadow);
+    border-color: rgba(143, 217, 255, 0.45);
+}
+
+.card:hover img{
+    transform: scale(1.02);
+}
+
+@media screen and (max-width: 1024px){
+    .tripleGrid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .upper{
-        flex-direction: column;
+    .card{
+        min-height: 170px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .tripleGrid,
+    .doubleGrid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .groups{
+        gap: 12px;
     }
 
-    .mobile{
-        width: 320px;
+    .group{
+        padding: 10px;
     }
-    .mocaps{
-        gap:25px;
+
+    .groupTitle{
+        font-size: 14px;
     }
-    .vk{
-        flex-direction: column;
-        gap: 25px;
+
+    .card{
+        min-height: 150px;
     }
-    
 }

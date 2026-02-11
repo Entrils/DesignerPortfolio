@@ -1,83 +1,204 @@
 @import "../../vars.css";
 
 .container{
-    position: relative;
+    width: min(var(--content-width), 92%);
+    margin: var(--section-gap) auto 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 80px;
-    z-index: 1;
-    margin-left: 5%;
-    margin-right: 5%;
+    gap: 24px;
 }
 
 .title{
     display: flex;
     flex-direction: column;
-    color: white;
-    font-size: 40px;
+    align-items: center;
     gap: 10px;
     font-family: var(--font-second);
-    justify-content: center;
-    align-items: center;
+    font-size: clamp(28px, 3vw, 38px);
     font-weight: 600;
 }
 
 .image{
-    width: 57px;
-    height: 57px;
+    width: 48px;
+    height: 48px;
 }
+
 .content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 1200px;
-    margin-top: 80px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-.skillImage{
-    width: 151px;
-    height: 151px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
 }
 
 .skill{
-    margin: 40px 80px;
-}
-progress {
-    border-radius: 10px;
-    width: 151px;
-    height: 13px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-m);
+    padding: 16px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 188px;
+    transition: transform var(--hover-duration) ease, box-shadow var(--hover-duration) ease, border-color var(--hover-duration) ease;
 }
 
-progress::-webkit-progress-bar {
-    border-radius: 10px;
-    background-color: #474747;
+.skill:hover{
+    transform: var(--hover-lift);
+    box-shadow: var(--hover-shadow);
+    border-color: rgba(143, 217, 255, 0.45);
 }
-progress::-webkit-progress-value {
-    border-radius: 10px;
-    background-color: #FFFFFF;
+
+.skillImage{
+    width: 92px;
+    height: 92px;
+    object-fit: contain;
+}
+
+.flipCard{
+    width: 100%;
+    min-height: 120px;
+    perspective: 700px;
+    cursor: pointer;
+    flex: 1;
+    border-radius: 12px;
+}
+
+.flipInner{
+    position: relative;
+    width: 100%;
+    min-height: 120px;
+    height: 100%;
+    transition: transform 420ms ease;
+    transform-style: preserve-3d;
+}
+
+.skill:hover .flipInner{
+    transform: rotateY(180deg);
+}
+
+.flipCard:focus-visible .flipInner{
+    transform: rotateY(180deg);
+}
+
+.skillFlipped .flipInner{
+    transform: rotateY(180deg);
+}
+
+.flipCard:focus-visible{
+    outline: 2px solid #3294be;
+    outline-offset: 2px;
+}
+
+.flipFront,
+.flipBack{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.flipFront{
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.flipBack{
+    transform: rotateY(180deg);
+    background: linear-gradient(145deg, rgba(73, 0, 191, 0.36), rgba(50, 148, 190, 0.28));
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px;
+}
+
+.programName{
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #ffffff;
+    max-width: 100%;
+    word-break: break-word;
+}
+
+.skillBar{
+    width: 100%;
+    height: 8px;
+    border-radius: 8px;
+}
+
+progress::-webkit-progress-bar{
+    border-radius: 8px;
+    background-color: #30303a;
+}
+
+progress::-webkit-progress-value{
+    border-radius: 8px;
+    background: linear-gradient(90deg, #5e2dd4, #8fd9ff);
 }
 
 .under{
-    color: white;
-    font-size: 24px;
+    color: var(--color-muted);
     text-align: center;
-    font-family: var(--font-second);
+    font-size: clamp(15px, 2vw, 20px);
+    line-height: 1.45;
 }
 
-@media screen and (max-width: 1030px){
+@media screen and (max-width: 1024px){
     .content{
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
     }
-    .under{
-    font-size: 16px;
-    width: 320px;
+}
+
+@media screen and (max-width: 768px){
+    .content{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
-    .container{
-        margin-top: 150px;
+}
+
+@media screen and (max-width: 430px){
+    .content{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .skill{
+        padding: 12px 10px;
+    }
+
+    .skillImage{
+        width: 72px;
+        height: 72px;
+    }
+
+    .flipCard,
+    .flipInner{
+        min-height: 100px;
+    }
+
+    .programName{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .content{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce){
+    .skill,
+    .flipInner{
+        transition: none;
+    }
+
+    .skill:hover{
+        transform: none;
+        box-shadow: none;
     }
 }

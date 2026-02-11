@@ -18,41 +18,81 @@ import sharm2 from '../../assets/another2/sharm2.png'
 import TopSide from '../../components/TopSIde/TopSide'
 import BackArrow from '../../components/BackArrow/BackArrow'
 
+const groups = [
+  {
+    title: 'Постер и титульный визуал',
+    gridClass: 'doubleGrid',
+    items: [
+      { src: egg, alt: 'Постер Egg' },
+      { src: seMary, alt: 'Постер Se Mary' }
+    ]
+  },
+  {
+    title: 'SMM и баннеры',
+    gridClass: 'doubleGrid',
+    items: [
+      { src: uslugi, alt: 'Блок услуг' },
+      { src: tovari, alt: 'Блок товаров' },
+      { src: future1, alt: 'Баннер Future 1' },
+      { src: future2, alt: 'Баннер Future 2' }
+    ]
+  },
+  {
+    title: 'Брендинг и вариации',
+    gridClass: 'doubleGrid',
+    items: [
+      { src: alena, alt: 'Alena Bakery' },
+      { src: deserts, alt: 'PP десерты' },
+      { src: sasha, alt: 'Логотип Sasha Pavlova 1' },
+      { src: sasha2, alt: 'Логотип Sasha Pavlova 2' }
+    ]
+  },
+  {
+    title: 'Sharm',
+    gridClass: 'doubleGrid',
+    items: [
+      { src: sharm1, alt: 'Sharm 1' },
+      { src: sharm2, alt: 'Sharm 2' }
+    ]
+  },
+  {
+    title: 'Широкие баннеры',
+    gridClass: 'singleGrid',
+    items: [
+      { src: semenova, alt: 'Широкий баннер Semenova' },
+      { src: babyTalk, alt: 'Широкий баннер Baby Talk' }
+    ]
+  }
+]
 
 export default function AnotherTwo() {
   return (
-    <div className={styles.container}>
+    <section className={styles.page}>
       <TopSide/>
       <BackArrow/>
-      <div className={styles.title}><img className={styles.image} src={titler} alt='Разделитель'/>ДРУГИЕ ДИЗАЙНЫ, МАКЕТЫ И НАБРОСКИ 2</div>
-      <div className={styles.description}>Данная страница будет без подписей, так как дизайны довольно старые и их очень много :)</div>
-      <div className={styles.content}>
-        <div className={styles.first}>
-          <img className={styles.egg} src={egg} alt='Egg'/>
-          <img className={styles.semary} src={seMary} alt='Se+Mary'/>
-        </div>
-        <div className={styles.second}> 
-          <div className={styles.sides}>
-            <img className={styles.uslugi} src={uslugi} alt='Services'/>
-            <img className={styles.tovari} src={tovari} alt='Items'/>
-            <img className={styles.future2} src={future2} alt='Future'/>
-            <img className={styles.deserts} src={deserts} alt='PP deserts'/> 
-          </div>
-          <div className={styles.sides}>
-            <img className={styles.alena} src={alena} alt='Alena Bakery'/>
-            <img className={styles.future1} src={future1} alt='Future'/>
-            <img className={styles.sasha} src={sasha} alt='Sasha Pavlova'/>
-            <img className={styles.sasha2} src={sasha2} alt='Sasha Pavlova'/>
-          </div>
-        </div>
 
-        <img className={styles.semenova} src={semenova} alt='Semenova Mary'/>
-        <img className={styles.babyTalk} src={babyTalk} alt='Baby Talk'/>
-        <div className={styles.third}>
-          <img className={styles.sharm} src={sharm1} alt='Sharm'/>
-          <img className={styles.sharm} src={sharm2} alt='Sharm Reverse'/>
+      <header className={styles.header}>
+        <div className={styles.title}>
+          <img loading='lazy' decoding='async' className={styles.image} src={titler} alt='Разделитель'/>
+          ДРУГИЕ ДИЗАЙНЫ, МАКЕТЫ И НАБРОСКИ 2
         </div>
+        <p className={styles.description}>Архивная коллекция макетов и визуальных экспериментов</p>
+      </header>
+
+      <div className={styles.groups}>
+        {groups.map((group) => (
+          <section className={styles.group} key={group.title}>
+            <h3 className={styles.groupTitle}>{group.title}</h3>
+            <div className={`${styles.groupGrid} ${styles[group.gridClass]}`}>
+              {group.items.map((work) => (
+                <figure className={styles.card} key={work.alt}>
+                  <img loading='lazy' decoding='async' src={work.src} alt={work.alt}/>
+                </figure>
+              ))}
+            </div>
+          </section>
+        ))}
       </div>
-    </div>
+    </section>
   )
 }

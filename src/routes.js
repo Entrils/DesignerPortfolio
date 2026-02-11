@@ -1,12 +1,14 @@
-import AnotherOne from "./pages/anotherOne/AnotherOne";
-import AnotherThree from "./pages/anotherThree/AnotherThree";
-import AnotherTwo from "./pages/anotherTwo/AnotherTwo";
-import Diamond from "./pages/diamond/Diamond";
-import Forum from "./pages/forum/Forum";
-import Logotypes from "./pages/logotypes/Logotypes";
-import MainPage from "./pages/mainpage/MainPage";
-import Studio from "./pages/studio/Studio";
+import { lazy } from "react";
 import { ANOTHERONE_ROUTE, ANOTHERTHREE_ROUTE, ANOTHERTWO_ROUTE, DIAMOND_ROUTE, FORUM_ROUTE, LOGO_ROUTE, MAIN_ROUTE, STUDIO_ROUTE } from "./utils/consts";
+
+const AnotherOne = lazy(() => import("./pages/anotherOne/AnotherOne"));
+const AnotherThree = lazy(() => import("./pages/anotherThree/AnotherThree"));
+const AnotherTwo = lazy(() => import("./pages/anotherTwo/AnotherTwo"));
+const Diamond = lazy(() => import("./pages/diamond/Diamond"));
+const Forum = lazy(() => import("./pages/forum/Forum"));
+const Logotypes = lazy(() => import("./pages/logotypes/Logotypes"));
+const MainPage = lazy(() => import("./pages/mainpage/MainPage"));
+const Studio = lazy(() => import("./pages/studio/Studio"));
 
 export const PublicRoutes = [
     {

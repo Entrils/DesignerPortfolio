@@ -13,28 +13,64 @@ import nakleiki from '../../assets/another3/nakleiki.png'
 import TopSide from '../../components/TopSIde/TopSide'
 import BackArrow from '../../components/BackArrow/BackArrow'
 
+const groups = [
+  {
+    title: 'Lego',
+    gridClass: 'doubleGrid',
+    items: [
+      { src: cup, alt: 'Серия Lego' },
+      { src: badge, alt: 'Lego badge' },
+      { src: maska, alt: 'Lego mask' }
+    ]
+  },
+  {
+    title: 'Ugolek',
+    gridClass: 'doubleGrid',
+    items: [
+      { src: ugolek, alt: 'Айдентика Ugolek' },
+      { src: menu, alt: 'Меню Ugolek' },
+      { src: ugolek2, alt: 'Вариации Ugolek' },
+      { src: semary, alt: 'Se Mary identity' }
+    ]
+  },
+  {
+    title: 'Cafe',
+    gridClass: 'doubleGrid',
+    items: [
+      { src: pattern, alt: 'Паттерн кафе' },
+      { src: nakleiki, alt: 'Стикеры кафе' }
+    ]
+  }
+]
+
 export default function AnotherThree() {
   return (
-    <div className={styles.container}>
+    <section className={styles.page}>
       <TopSide/>
       <BackArrow/>
-      <div className={styles.title}><img className={styles.image} src={titler} alt='Разделитель'/>ДРУГИЕ ДИЗАЙНЫ, МАКЕТЫ И НАБРОСКИ 3</div>
-      <div className={styles.description}>Данная страница будет без подписей, так как дизайны довольно старые и их очень много :)</div>
-      <div className={styles.content}>
-          <img className={styles.cup} src={cup} alt='Lego Cup'/>
-          <div className={styles.module1}>
-            <img className={styles.badge} src={badge} alt='Lego Badge'/>
-            <img className={styles.maska} src={maska} alt='Lego Maska'/>
-          </div>
-          <img className={styles.ugolek} src={ugolek} alt='Ugolek Logotypes'/>
-          <img className={styles.menu} src={menu} alt='Ugolek menu'/>
-          <img className={styles.ugolek2} src={ugolek2} alt='Ugolek logotypes'/>
-          <img className={styles.semary} src={semary} alt='Se+Mary'/>
-          <div className={styles.module2}>
-            <img className={styles.pattern} src={pattern} alt='cafe pattern'/>
-            <img className={styles.nakleiki} src={nakleiki} alt='cafe nakleiki'/>
-          </div>
+
+      <header className={styles.header}>
+        <div className={styles.title}>
+          <img loading='lazy' decoding='async' className={styles.image} src={titler} alt='Разделитель'/>
+          ДРУГИЕ ДИЗАЙНЫ, МАКЕТЫ И НАБРОСКИ 3
+        </div>
+        <p className={styles.description}>Подборка работ по айдентике, упаковке и печатным материалам</p>
+      </header>
+
+      <div className={styles.groups}>
+        {groups.map((group) => (
+          <section className={styles.group} key={group.title}>
+            <h3 className={styles.groupTitle}>{group.title}</h3>
+            <div className={`${styles.groupGrid} ${styles[group.gridClass]}`}>
+              {group.items.map((work) => (
+                <figure className={styles.card} key={work.alt}>
+                  <img loading='lazy' decoding='async' src={work.src} alt={work.alt}/>
+                </figure>
+              ))}
+            </div>
+          </section>
+        ))}
       </div>
-    </div>
+    </section>
   )
 }
